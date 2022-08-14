@@ -4,6 +4,11 @@ body{
     background-color: #f9fafb;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+@font-face {
+    font-family: Norse-Bold;
+    src: url(fonts/Norse-Bold.otf);
 }
 
 #backgroundPicture{
@@ -35,6 +40,7 @@ body{
 }
 #logo > p {
     font-size: 150px;
+    font-family: Norse-Bold;
 }
 #credits{
     color: white;
@@ -93,6 +99,9 @@ button{
     border-radius: 9px;
     border: none;
 }
+button:active{
+    background-color: #3e4c32;
+}
 .labelColumn{
 display: flex;
 flex-direction: column;
@@ -127,3 +136,13 @@ p{
     padding-right: 150px;
     font-size: 30px;
 }
+#signUpPassword:invalid{
+    border-color: rgb(255, 131, 131);
+}
+#signUpConfirmPassword:invalid{
+    border-color: rgb(255, 131, 131);
+}
+#passwordsSame{
+    color: rgb(255, 131, 131);
+}
+

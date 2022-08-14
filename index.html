@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400;1,900&display=swap" rel="stylesheet">
+    
     <script src="javascript.js" defer></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,31 +28,34 @@
                 life to help you realize your deepest dreams. <br> Sign up <i>now</i> to get started.</p>
             <p>You <i>know</i> you want to.</p>
         </div>
-        <form method="post">
+        <form>
             <div id="inputs">
                 <p>Let's do this!</p>
                 <div id="labelsAndInputs">
                     <div class="labelColumn"><label for="firstName">FIRST NAME</label>
-                    <input type="text" id="signUp"></div>
+                    <input type="text" class="signUp"></div>
 
                     <div class="labelColumn"><label for="lastName">LAST NAME</label>
-                    <input type="text" id="signUp"></div>
+                    <input type="text" class="signUp"></div>
 
                     <div class="labelColumn"><label for="email">EMAIL</label>
-                    <input type="email" id="signUp"></div>
+                    <input type="email" class="signUp"></div>
 
                     <div class="labelColumn"><label for="phoneNumber">PHONE NUMBER</label>
-                    <input type="number" id="signUp"></div>
+                    <input type="number" class="signUp"></div>
 
                     <div class="labelColumn"><label for="password">PASSWORD</label>
-                    <input type="password" id="signUp"></div>
+                    <input type="password" id="signUpPassword" required minlength="3">
+                    <div id="passwordsSame">*Passwords are not the same</div>
+                    </div>
 
                     <div class="labelColumn"><label for="confirmPassword">CONFIRM PASSWORD</label>
-                    <input type="password" id="signUp"></div>
+                    <input type="password" id="signUpConfirmPassword" required minlength="3"></div>
+                    
                 </div>
             </div>
             <div id="buttonsForForm">
-                <button type="submit">Create Account</button>
+                <button id="buttonCreate">Create Account</button>
                 <p>Already have an Account? <a href="">Log in.</a></p>
             </div>
         </form>
