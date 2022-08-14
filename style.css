@@ -49,6 +49,13 @@ form{
     display: flex;
     flex-direction: column;
 }
+#inputs{
+    padding: 40px 60px;
+    background-color: white;
+    border-top: thin solid rgb(244, 244, 244);
+    margin-bottom: 30px;
+}
+
 button{
     background-color: #596d48;
     color: #ffffff;
@@ -59,8 +66,11 @@ button{
     border-radius: 9px;
     border: none;
 }
-#content{
+#buttonsForForm{
     padding: 0px 60px;
+
+}
+#content{
     width: 95%;
     display: flex;
     flex-direction: column;
@@ -76,6 +86,7 @@ p{
     font-weight: bold;
 }
 #textAbove{
+    padding: 0px 60px;
     padding-right: 150px;
     font-size: 30px;
 }
